@@ -1,0 +1,54 @@
+Arguments: 
+  /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/share/yarn/bin/yarn.js
+
+PATH: 
+  /data/data/com.termux/files/usr/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  21.6.2
+
+Platform: 
+  android arm64
+
+Trace: 
+  Error: EACCES: permission denied, symlink '../pino/bin.js' -> '/storage/emulated/0/bugv8/node_modules/@whiskeysockets/baileys/node_modules/.bin/pino'
+
+npm manifest: 
+  {
+    "name": "private",
+    "version": "9.9.9.9",
+    "description": "chrome",
+    "main": "main.js",
+    "type": "commonjs",
+    "directories": {
+      "lib": "lib",
+      "temp": "temp",
+      "session": "session"
+    },
+    "scripts": {
+      "start": "node main.js"
+    },
+    "author": "LECCYSTORE",
+    "license": "MIT",
+    "dependencies": {
+      "@adiwajshing/keyed-db": "^0.2.4",
+      "@whiskeysockets/baileys": "^6.5.0",
+      "axios": "^1.4.0",
+      "chalk": "^4.1.2",
+      "node-cache": "^5.1.2",
+      "node-fetch": "2.6.1",
+      "readline": "^1.3.0",
+      "parse-ms": "^2.1.0",
+      "pino": "^8.14.1",
+      "util": "^0.12.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,20 @@
+const fs = require('fs')
+const chalk = require('chalk')
+
+// ganti info bot dibawah ini
+global.botName = "Radit order jasa run 082252804943"
+global.ownerName = "jasa bug radit"
+global.botNumber = "6282252804943"
+global.devNumber = ["6282252804943"]
+
+global.Auto_Typing = false // auto typing
+global.Auto_Recording = false // auto recording
+global.Auto_ReadPesan = false // auto read messages
+
+let file = require.resolve(__filename)
+fs.watchFile(file, () => {
+fs.unwatchFile(file)
+console.log(chalk.redBright(`Update ${__filename}`))
+delete require.cache[file]
+require(file)
+})
